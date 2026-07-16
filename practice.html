@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="shayri1.jpg" alt="">
+    <a href="shayri.html"><button onclick="test()">click me</button></a>
+    <br><br>
+    <img src="shayri1.jpg" alt="">
+    <a href="index.html"><button>click me</button></a>
+    <script>
+        function test()
+        {
+        const stylesheet=document.createElement("style");
+        stylesheet.innerHTML=`
+        img:hover{
+            animation:ex 2s 1s infinite;
+        }
+        @keyframes ex{
+        0%{
+            transform:scale(2);
+        }
+        25%{
+            transform:scale(4);
+        }
+        50%{
+            transform:scale(6);
+        }
+        75%{
+            transform:scale(8);
+        }
+        100%{
+            transform:scale(10);
+        }
+        }`;
+        document.head.appendChild(stylesheet);
+    }
+    </script>
+</body>
+</html>

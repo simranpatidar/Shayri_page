@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shayari.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: "Roboto", sans-serif;
+        }
+        .nexta{
+            background-color:aliceblue;
+            height:80vh;
+            width:100vw;
+            
+        }
+        .nexta input{
+            padding:10px 50px;
+            border-radius: 10px;
+        }
+        .nexta button{
+            padding:10px 20px;
+            border-radius:10px;
+            border:none;
+            background-color: blue;
+        }
+        .nexta button a{
+            color:white;
+            text-decoration:none;
+        }
+        .nexta button:hover{
+            background-color: rgb(97, 97, 219);
+        }
+    </style>
+</head>
+<body> 
+    <div class="nexta">
+    <label for="text">Email: &nbsp &nbsp &nbsp <input type="email" placeholder="Enter your email" id="su"></label> <br> <br>
+    <label for="text">Password: <input type="password" placeholder="Enter a passoword" id="su1"></label>
+    <br><br>
+    <button onclick="testy()"><a href="index.html">Sign in</a></button>
+    <br><br>
+    </div>
+    
+    <script>
+        function testy()
+        {
+            let email=document.getElementById("su").value;
+            let password=document.getElementById("su1").value;
+        }
+    </script>
+</body>
+</html>

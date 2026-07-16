@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(239, 237, 232);
+            font-family: "Roboto", sans-serif;
+        }
+        .img1{
+            height:200px;
+            width:200px
+        }
+        .img1 img{
+            margin-left:600px;
+            margin-top:120px;
+            height:150px;
+            width:150px;
+            border-radius:15px;
+        }
+        .animate{
+            scale:1;
+            transition:0.5s;
+            animation:ex;
+            animation-timing-function:ease;
+            animation-duration:1s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+        @keyframes ex{
+            from{
+                scale:10;
+            }
+            /* 25%{
+                scale:13;
+            }
+            50%{
+                scale:25;
+            }
+            75%{
+                scale:50;
+            } */
+            to{
+                scale:210;
+            }
+        }
+        p{
+            margin-left:600px;
+            margin-top:2px;
+            font-size:30px;
+            color:#000957dd;
+            text-shadow: 5px 1px 2px #dd6c0a;
+        }
+    </style>
+</head>
+<body>
+    <div class="img1">
+         <img src="shyari.png" alt=""  onclick="fun()" id="im" >
+       <p>ShayariVerse</p>
+    </div>
+    <script>
+        let im=document.getElementById("im");
+        im.onclick=()=>{
+        im.classList.add("animate");
+        setTimeout(()=>{
+            window.location.href="index.html";
+        },1000);
+    };
+    </script>
+</body>
+</html>
